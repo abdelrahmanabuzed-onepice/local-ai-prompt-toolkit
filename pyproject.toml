@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "local-ai-prompt-toolkit"
+version = "1.0.0"
+description = "Local AI and prompt engineering toolkit for LLM benchmarking, spintax synthesis, token estimation, and RAG chunking."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+    { name = "Abdelrahman Abouzed" }
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = []
+
+[project.scripts]
+localai-cli = "local_ai_prompt_toolkit.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
